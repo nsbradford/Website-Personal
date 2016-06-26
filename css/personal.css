@@ -11,6 +11,7 @@
     /*padding-top: 15%;*/
 }
 
+
 .fa:hover {
     opacity: .7;   
 }
@@ -37,18 +38,6 @@
 
 }
 
-.text-vertical-center {
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-}
-
-/*.text-vertical-center h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
-}*/
 
 .team-member {
     text-align:left;
@@ -84,10 +73,10 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 20px 0 35px;
     /*text-transform: uppercase;*/
     font-family: 'Noto Sans',Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 100;
     letter-spacing: 1px;
     text-align:center;
 }
@@ -117,6 +106,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: #1d9b6c;
+    opacity: 0.7;
 }
 
 .light {
@@ -172,6 +162,7 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
+
 .navbar-custom .nav li a:hover {
     outline: 0;
     /*color: rgba(255,255,255,.8);*/
@@ -203,15 +194,22 @@ a:focus {
     color: #000;
 }
 
-.navbar-inverse .btn-navbar
-{
-    background: red;
+.navbar-custom .fa {
+    /*color: #fff;*/
 }
 
 @media(max-width:768px) {
     .navbar-custom a {
         font-size: 24px;
         color: #000;
+    }
+
+    .navbar-custom .fa {
+        color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(0,0,0,.3);
     }
 }
 
@@ -240,7 +238,10 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/boston.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url(../img/boston.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -272,7 +273,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 50px;
     }
 
     .intro .intro-body .intro-text {
@@ -395,7 +396,7 @@ a:focus {
 
 .btn {
     border-radius: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;

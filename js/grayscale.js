@@ -35,6 +35,36 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // // Google Maps Scripts
+
+function initMap() {
+    var mapDiv = document.getElementById('map');
+    var myLatLng = {lat: 42.2739, lng: -71.8060};
+
+    var map = new google.maps.Map(mapDiv, {
+        // Disables the default Google Maps UI components
+        // disableDefaultUI: true,
+        // draggable: false,
+        scrollwheel: false,
+        center: myLatLng,
+        zoom: 16,
+        styles: [
+          {
+            "stylers": [
+              { "hue": "#0099ff" },
+              { "saturation": -8 }
+            ]
+          }
+        ]
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Here I am!'
+    });
+}
+
+
 // var map = null;
 // // When the window has finished loading create our google map below
 // google.maps.event.addDomListener(window, 'load', init);
