@@ -1,151 +1,196 @@
-<!DOCTYPE HTML PUBLIC >
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- Facebook? -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		<meta property="og:title" content="Nicholas S. Bradford" />
+		<meta property="og:url" content="http://users.wpi.edu/~nsbradford" />
+		<meta property="og:image" content="http://users.wpi.edu/~nsbradford" />
+		<meta property="og:description" content="Personal website for Nicholas S. Bradford." />
+        <base target="_blank">
+        <title>Nicholas S. Bradford</title>
 
-<!--Made with love.-->
-<!--3/12/2015 - Nicholas S. Bradford-->
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<html>
-	<head> 
-		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
-        <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:300,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
-		<title>Nicholas S. Bradford</title>
-	</head>
-	<body style="background-color:white">
-		<center>
-            <h1>Nicholas Bradford</h1>
+        <!-- Custom CSS -->
+        <link href="css/personal.css" rel="stylesheet">
+        <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" >
+        <link href='https://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,greek' rel='stylesheet' type='text/css'>
 
-            <!-- TITLE BANNER -->
-            <table class="table_main">
-                <tr>
-                    <td rowspan="3"><img class="img_med" src="images/profile_color.jpg" style="height:300; width:450" /></td>
-                    <td height="50">
-                        <table>
-                            <tr>
-                                <td><h3><b>About Me</b> | Connect</h3></td>
-                                <td style="vertical-align:middle"><div  style="text-align:center; vertical-align:middle" ><form action="files/NicholasSBradford.Resume16.pdf" target="_blank"><input type="submit" value="View Resume"></form></div></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="50">
-                        <!-- CONNECT -->
-                        <table>
-                            <tr>
-                                <td class="td_1"><a href="mailto:nsbradford@wpi.edu" target="_blank"><img class="img_logo" src="images/icon_email.png" /></a> </td>
-                                <td><a href="https://www.linkedin.com/in/nsbradford" target="_blank"><img class="img_logo" src="images/icon_color_linkedin.png" /></a> </td>       
-                                <td><a href="https://www.facebook.com/nicholas.s.bradford" target="_blank"><img class="img_logo" src="images/icon_color_facebook.png" /></a> </td> 
-                                <td><a href="https://twitter.com/N_S_Bradford" target="_blank"><img class="img_logo" src="images/icon_color_twitter.png" /></a> </td>  
-                                <td><a href="https://instagram.com/nicholas_schoneweg" target="_blank"><img class="img_logo" src="images/icon_color_instagram.png" /></a> </td>
-                                <td><a href="https://soundcloud.com/nicholas-schoneweg-bradford" target="_blank"><img class="img_logo" src="images/icon_color_soundcloud.png" /></a> </td> 
-                                <td><a href="https://github.com/nsbradford?tab=repositories" target="_blank"><img class="img_logo" src="images/icon_github.png" /></a> </td> 
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td><p></p><p>Mortal in flesh but eternal in thought, trying to save the world from armageddon one witty remark at a time.</p></td>
-                </tr>
-            </table>
+        <!-- Google Analytics -->
+        <!-- TODO -->
+    </head>
 
-            <!-- PROFESSIONAL -->
-            <h2>Professional</h2>
-            <table class="table_main">
+    <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!--By <a href="//commons.wikimedia.org/w/index.php?title=User:Hellogreenway&amp;action=edit&amp;redlink=1" class="new" title="User:Hellogreenway (page does not exist)">Hellogreenway</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, https://commons.wikimedia.org/w/index.php?curid=22690514 -->
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- <a class="navbar-brand page-scroll" href="#page-top">
+                        <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                    </a> -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#download">Download</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <!-- Intro Section -->
+        <header class="intro" class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <img src="img/nick.jpg" class="img-responsive img-circle" alt="Logo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1"><h1 class="brand-heading">nicholas sch&#246;neweg bradford</h1></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4"><h4>"Trying to save the world one witty remark at a time."</h4></div>
+                </div>
+            </div>
+            <div id="social">
                 
-                <!-- SKILLS -->
-                <tr>
-                    <td rowspan="3"><img class="img_med" src="images/code.jpg"/></td>
-                    <td height="50"><h3><b>Skills</b> | Areas of Interest</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>Software Engineering, Machine Learning, and Robotics</h4></td>
-                </tr>
-                <tr>
-                    <td><p><b>Programming</b>: C, C++, C#, Java, Python, HTML, CSS</p><p><b>Applications</b>: Visual Studio, Eclipse, Microsoft Office</p><p><b>Soft</b>: Leadership, Organization, Creativity</p></td>
-                </tr>
+                <a class="" href="mailto:nsbradford@gmail.com" target="_blank"><i class="fa fa-envelope fa-4x"></i></a>
+                <a class="" href="https://www.facebook.com/nicholas.s.bradford" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>
+                <a class="" href="https://twitter.com/N_S_Bradford" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+                <a class="" href="https://www.linkedin.com/in/nsbradford" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a>
+                <a class="" href="https://github.com/nsbradford" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+                <a class="" href="https://soundcloud.com/nicholas-schoneweg-bradford" target="_blank"><i class="fa fa-soundcloud fa-4x"></i></a>
 
-                <!-- DRAPER -->
-                <tr>
-                    <td rowspan="3"><img class="img_med" src="images/professional_draper.jpg"/></td>
-                    <td height="50"><h3><b>Draper Laboratories</b> | Software Intern</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>May 2015 - Present</h4></td>
-                </tr>
-                <tr>    
-                    <td><p>[to be announced...]</p></td>
-                </tr>
-                
-                <!-- JACOBS -->
-                <tr>
-                    <td rowspan="3"><img class="img_med" src="images/professional_jacobs.jpg"/></td>
-                    <td height="50"><h3><b>Jacobs Technology</b> | Software Intern</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>May 2014 - January 2015</h4></td>
-                </tr>
-                <tr>
-                    <td><p>Worked on a team of 20 to produce mission planning software for a military aircraft, focusing on converting data into a useful summary format for pilots. Developed and reviewed code in C++ and C# using Visual Studio and TFS.</p></td>
-                </tr>
+            </div>
+        </header>
+        
+        <section id="team" class="even section">
+            <div class="container-fluid fill">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/work.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Work</h4>
+                            <p>This summer I have the pleasure of working at <a href="http://www.quantlab.com/">Quantlab Financial</a>, where I'm working on a compiler for applications in ultra-high performance computing. I've also had opportunities to work on <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a> mesh networking security, as well as design mission planning software for the Boeing <a href="https://en.wikipedia.org/wiki/Boeing_KC-46_Pegasus">KC-46 Pegasus</a> midair refueling tanker. For more information, please check out my <a href="files/NicholasSBradford_Resume22.pdf">resume</a>. </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/build.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Build</h4>
+                            <p>Whether it's a [website] for promoting student collaboration or a set of sweet [music-synched LEDs], I'm always building something new. Right now, I'm on a large team creating an Autonomous Cargo Aircraft, where I'm using [computer vision] to let a Piper Cherokee navigate from hangar to runway.</p>
 
-            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/invest.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Invest</h4>
+                            <p>After first becoming interested in investing several years ago, I've done research on using [LSTM recurrent neural networks] to predict stock price fluctuations, and deployed my own SVM-based trading algorithm using <a href="https://www.quantopian.com">Quantopian</a> and <a href="https://www.robinhood.com/">Robinhood</a>. Now I serve as President of the <a href="http://users.wpi.edu/~investing">WPI Investing Association</a>, through which I lead over 20 students in financial education and competition (and also managed to get <a href="https://en.wikipedia.org/wiki/The_Big_Short_(film)">The Big Short</a> []  screened on campus!).</p>
 
-            <!-- EDUCATION -->
-            <h2>Education</h2>
-            <table class="table_main">
-                <tr>
-                     <td rowspan="3"><img class="img_med" src="images/education_wpi.jpg"/></td>
-                     <td height="50"><h3><b>Worcester Polytechnic Institute</b> | May 2017</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>B.S. in Computer Science, Minor in Robotics</h4></td>
-                </tr>
-                <tr>
-                    <td><p><b>GPA</b>: 3.6/4.0</p><p><b>Related Coursework</b>: Software Engineering, Artificial Intelligence, Algorithms, Computer Networks, Webware, Object-Oriented Programming, Systems Programming, Digital Circuit Design.</p></td>
-                </tr>
-            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="team-member">
+                            <img src="img/music.jpg" class="img-responsive img-circle" alt="">
+                            <h4>Create</h4>
+                            <p>Since my sophomore year of highschool I've been working on an epic fantasy novel, of which I've written over 100,000 words (~450 pages). This often inspires me to write musical accompanyment, some of which you can listen to on <a href="https://soundcloud.com/nicholas-schoneweg-bradford">SoundCloud</a>. I've also experimented with using recurrent neural nets to help compose music for me, with some interesting results.</p>
 
-            <!-- CREATIVE -->
-            <h2>Creativity</h2>
-            <table class="table_main">
-                
-                <!-- WRITING -->
-                <tr>
-                     <td rowspan="3"><img class="img_med" src="images/writing_novel.png"/></td>
-                     <td height="50"><h3><b>Writing</b> | Fantasy Novel</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>2010 - Present</h4></td>
-                </tr>
-                <tr>
-                    <td><p>In my sophomore year of high school, my combined interests in fantasy, reading, and the art of storytelling led me to begin writing a fantasy novel. I now have over <b>100,000</b> words (~430 pages) completed, and estimate writing at least 30,000 more. The story focuses on the chaos caused between nations, gods, demons, and the ordinary citizens when an aging ruler leaves his throne to embark on a quest for eternal life.</p></td>
-                </tr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <!-- MUSIC -->
-                <tr>
-                     <td rowspan="3"><div style="padding-right:50px"><iframe align="right" marginwidth="50" width="300" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195234612&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div></td>
-                     <td height="50"><h3><b>Music</b> | Compositions</h3></td>
-                </tr>
-                <tr>
-                    <td height="50"><h4>2005 - Present</h4></td>
-                </tr>
-                <tr>
-                    <td><p>I will be completing my WPI Humanities requirement by working on an interactive music-based video game with Professor Vincent Manzo. To see my most recent compositions and arrangements, please visit my SoundCloud.</p> </td>
-                </tr>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var mapDiv = document.getElementById('map');
+                var myLatLng = {lat: 42.2739, lng: -71.8060};
 
-            </table>
+                var map = new google.maps.Map(mapDiv, {
+                    // Disables the default Google Maps UI components
+                    // disableDefaultUI: true,
+                    // draggable: false,
+                    scrollwheel: false,
+                    center: myLatLng,
+                    zoom: 16,
+                    styles: [
+                      {
+                        "stylers": [
+                          { "hue": "#0099ff" },
+                          { "saturation": -8 }
+                        ]
+                      }
+                    ]
+                });
 
-            
-            <h2>Thank you for visiting!</h2>
-            <p   style="font-family:'Josefin Slab'">Website hits:
-                <a href='http://www.hit-counter-html-code.com'>
-                    <img src='http://www.free-website-hit-counter.com/c.php?d=9&id=80008&s=7' border='0' title='free website hit counter' style="height:20; width:150"></a><br />
-            </p>
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Here I am!'
+                });
+            }
 
-            <!--
-            <div style="background-color:black"><img src="images/profile_dark.jpg" style="height:250; width:250" /></div>
-            -->
+        </script>
 
-        </center>
-	</body>
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright &copy; Nicholas S. Bradford 2016</p>
+            </div>
+        </footer>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALNqOZ9gbrNcQVt7JVJXhryFoDnekaWCs&callback=initMap">
+        </script>
+       
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Scrolling Nav JavaScript 
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>-->
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/grayscale.js"></script>
+
+    </body>
 </html>
