@@ -15,6 +15,50 @@
     opacity: .7;   
 }
 
+.img-responsive.img-circle{
+    /*width: 600px;
+    height: 600px;*/
+    width: 30em;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    /*opacity: 1.0 !important;*/
+    display: block;
+    margin: 0 auto;
+}
+
+@media(max-width:768px) {
+    .img-responsive.img-circle{
+        width: 20em;
+    }
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}*/
+
+.team-member {
+    text-align:left;
+}
+.team-member img {
+    /*width: 10em;*/
+    display:block;
+    margin:0 auto;
+}
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -179,6 +223,10 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+#intro:after {
+    opacity: 0.5;
 }
 
 .intro .intro-body {
