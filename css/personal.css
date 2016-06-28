@@ -1,25 +1,41 @@
+
+.team-member {
+    text-align:left;
+    padding:1em;
+}
+.team-member img {
+    /*width: 10em;
+    display:block;
+    margin:0 auto;*/
+    border: 2px solid #000 !important;
+}
+
 #social {
-    margin: 20px 10px;
+    /*margin: 40px 20px;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
     border-radius: 25px;
 }
 
-.fa {
-    color:grey;
-    /*border-radius: 20px;*/
-    margin-right: 10px;
-    /*padding-top: 15%;*/
+.socialicon .fa {
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*margin-bottom: 20px;*/
 }
 
 
-.fa:hover {
+.socialicon .fa:hover {
     opacity: .7;   
 }
 
 .img-responsive.img-circle{
     /*width: 600px;
     height: 600px;*/
-    width: 30em;
+    width: 20em;
     border-radius: 100%;
     border: 2px solid #fff;
     /*opacity: 1.0 !important;*/
@@ -29,11 +45,17 @@
 
 @media(max-width:768px) {
     .img-responsive.img-circle{
-        width: 20em;
+        width: 15em;
     }
     .intro {
         height: 100%;
         padding: 0;
+    }
+    .socialicon .fa {
+        color: white;
+        margin-right: 10px;
+        margin-left: 10px;
+        /*margin-bottom: 20px;*/
     }
 
 }
@@ -47,6 +69,9 @@
     display:block;
     margin:0 auto;
 }
+.team-member h3 {
+
+}
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -57,7 +82,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Noto Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     color: #000;
     background-color: #fff;
 }
@@ -75,10 +100,18 @@ h5,
 h6 {
     margin: 20px 0 35px;
     /*text-transform: uppercase;*/
-    font-family: 'Noto Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     font-weight: 100;
     letter-spacing: 1px;
     text-align:center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*text-transform: uppercase;*/
 }
 
 p {
@@ -96,7 +129,9 @@ p {
 }
 
 a {
-    color: #42dca3;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    target: _blank;
+    color: #0099ff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -105,19 +140,20 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #1d9b6c;
-    opacity: 0.7;
+    /*color: #1d9b6c;*/
+    opacity: 0.9;
 }
 
 .light {
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .navbar-custom {
+    text-align: center;
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     /*text-transform: uppercase;*/
-    font-family: 'Noto Sans',Helvetica,Arial,sans-serif;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
     background-color: #fff;
 }
 
@@ -154,6 +190,7 @@ a:focus {
 .navbar-custom a {
     font-size: 24px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .navbar-custom .nav li a {
@@ -239,8 +276,8 @@ a:focus {
     text-align: center;
     color: #fff;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ), url(../img/boston.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -273,7 +310,7 @@ a:focus {
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .intro .intro-body .intro-text {
@@ -282,10 +319,10 @@ a:focus {
 }
 
 .btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    padding: 20px 16px;
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
@@ -353,6 +390,11 @@ a:focus {
         -moz-transform: scale(1);
         transform: scale(1);
     }
+}
+
+.section {
+    padding-top: 100px !important;
+    /*background-color: red;*/
 }
 
 .content-section {
