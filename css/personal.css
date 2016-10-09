@@ -41,6 +41,7 @@
     /*opacity: 1.0 !important;*/
     display: block;
     margin: 0 auto;
+
 }
 
 @media(max-width:768px) {
@@ -72,6 +73,8 @@
 .team-member h3 {
 
 }
+
+
 
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -276,8 +279,8 @@ a:focus {
     text-align: center;
     color: #fff;
     background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ), url(../img/boston.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -312,10 +315,15 @@ a:focus {
     .intro .intro-body .brand-heading {
         font-size: 40px;
     }
-
+ 
     .intro .intro-body .intro-text {
         font-size: 26px;
     }
+}
+
+.btn-circle.invest {
+    padding: 20px 14px !important;
+    /*color: #DC143C !important;*/
 }
 
 .btn-circle {
@@ -328,6 +336,8 @@ a:focus {
     font-size: 40px;
     color: #fff;
     background: 0 0;
+    margin-right: 20px;
+    margin-left: 20px;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
